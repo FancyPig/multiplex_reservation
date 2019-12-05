@@ -23,6 +23,22 @@ h1, h2, h3
 	color: #454445;
 }
 
+h4
+{
+	margin: 20px;
+	padding: 0;
+	font-weight: 600;
+	color: white;
+}
+
+h5
+{
+	margin-top: 10px;
+	padding: 0;
+	font-weight: 600;
+	color: white;
+}
+
 p, ol, ul
 {
 	margin-top: 0;
@@ -706,7 +722,7 @@ ul.contact li a.icon-rss:before
 	{
 		height: 30em;
 
-		background-image: url(images/banner.jpeg);
+		background-image: url(/images/banner.jpeg);
 		background-position: center;
 		background-size: cover;
 	}

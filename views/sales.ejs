@@ -7,9 +7,8 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
-<link href="\stylesheets\default.css" rel="stylesheet" type="text/css" media="all" />
-<link href="\stylesheets\fonts.css" rel="stylesheet" type="text/css" media="all" />
-
+<link href="/stylesheets/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css" media="all" />
 
 <style type="text/css"> /* tg 윗 표, tg1 아랫 표 */
 .tg1  {border-collapse:collapse;border-spacing:0;border-color:#93a1a1;}
@@ -51,6 +50,21 @@
 <div id="ebox1">
 	<a href="#" class="button">매 출</a>
 </div>
+
+<!-- 영화제목 검색 폼 -->
+<div style="table-layout:fixed">
+<form>
+	<h5 style="color:white;font-size:12px;letter-spacing:1px;margin-left:70px">
+	영화제목
+	<input type="text" name="inputbar" size="15" style="margin-left:30px">
+	<input type="submit" value="조회" style="letter-spacing:1px;margin-left:30px;margin-right:15px;padding-left:5px;padding-right:5px">
+  <select name="검색결과" size="1" style="margin-left:15px;margin-right:15px;padding:2px">
+    <option value="머리부분">검색 결과</option>
+  </select>
+</h5>
+</form>
+</div>
+
 <div style="margin-bottom:15px;">
 <table class="tg1" width="90%" style="table-layout:fixed" align="center">
   <tr>
@@ -90,18 +104,41 @@
 </table>
 </div>
 
-
+<!-- 조건 별 검색 폼 -->
+<div style="table-layout:fixed" align="center">
 <form>
-	<h1 style="color:white;font-size:15px">
-	<input type="radio" name="check" value="ID" checked>
-	ID
-	<input type="radio" name="check" value="성명">
-	이름
-	<input type="text" name="inputbar" size="12">
-	<input type="submit" value="조회">
-</h1>
+	<h4 style="color:white;font-size:12px;letter-spacing:3px">
+  기간
+  <input type="text" name="부터" size="8" style="margin-left:15px;margin-right:15px">
+  ~
+  <input type="text" name="까지" size="8" style="margin-left:15px;margin-right:15px">
+  지역
+  <select name="지역" size="1" style="margin-left:15px;margin-right:15px;padding:2px">
+    <option value="서울">서울</option>
+    <option value="서울">부산</option>
+    <option value="서울">대구</option>
+    <option value="서울">인천</option>
+    <option value="서울">광주</option>
+    <option value="서울">대전</option>
+    <option value="서울">울산</option>
+    <option value="경기">경기</option>
+    <option value="강원">강원</option>
+    <option value="충북">충북</option>
+    <option value="충남">충남</option>
+    <option value="경북">경북</option>
+    <option value="경남">경남</option>
+    <option value="전북">전북</option>
+    <option value="전남">전남</option>
+    <option value="제주">제주</option>
+  </select>
+  지점
+  <input type="text" name="지점" size="10" style="margin-left:15px;margin-right:15px">
+  <input type="submit" value="조회" style="letter-spacing:1px;margin-left:15px;margin-right:30px;padding-left:5px;padding-right:5px">
+  총매출액
+  <input type="text" name="총매출액" size="20" style="margin-left:30px">
+</h4>
 </form>
-
+</div>
 
 <div style="margin-top:15px;">
 <table class="tg" width="90%" style="table-layout:fixed" align="center">

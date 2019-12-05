@@ -10,7 +10,6 @@
 <link href="/stylesheets/default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css" media="all" />
 
-
 <style type="text/css"> /* tg1 위 작은 표 tg 아래 큰 표 */
 .tg1  {border-collapse:collapse;border-spacing:0;border-color:#ccc;}
 .tg1 td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
@@ -65,18 +64,23 @@
 </table>
 </div>
 
-
+<!-- 검색 폼 -->
+<div style="table-layout:fixed" align="center">
 <form>
-  <h1 style="color:white;font-size:15px">
-  <input type="radio" name="check" value="ID" checked>
-  ID
-  <input type="radio" name="check" value="성명">
-  이름
-  <input type="text" name="inputbar" size="12">
-  <input type="submit" value="조회">
-</h1>
+	<h4 style="color:white;font-size:12px;letter-spacing:3px">
+  직원번호
+  <input type="text" name="직원번호" size="12" style="margin-left:15px;margin-right:15px">
+  <input type="submit" value="조회" style="letter-spacing:1px;margin-left:15px;margin-right:30px;padding-left:5px;padding-right:5px">
+  기간
+  <input type="text" name="부터" size="8" style="margin-left:15px;margin-right:15px">
+  ~
+  <input type="text" name="까지" size="8" style="margin-left:15px;margin-right:15px">
+  <input type="submit" value="조회" style="letter-spacing:1px;margin-left:15px;margin-right:30px;padding-left:5px;padding-right:5px">
+  총급여액
+  <input type="text" name="총급여액" size="20" style="margin-left:30px">
+</h4>
 </form>
-
+</div>
 
 <div style="margin-top:15px;">
 <table class="tg" width="90%" style="table-layout:fixed" align="center">

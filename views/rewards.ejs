@@ -10,7 +10,6 @@
 <link href="/stylesheets/default.css" rel="stylesheet" type="text/css" media="all" />
 <link href="/stylesheets/fonts.css" rel="stylesheet" type="text/css" media="all" />
 
-
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Calendar</title>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -83,18 +82,20 @@ table.calendar td{
   </tr>
 </table>
 
+<!-- 날짜 검색 -->
+<div style="table-layout:fixed" align="right">
 <form>
-  <h1 style="color:white;font-size:15px">
-  <input type="radio" name="check" value="ID" checked>
-  ID
-  <input type="radio" name="check" value="성명">
-  이름
-  <input type="text" name="inputbar" size="12">
-  <input type="submit" value="조회">
-</h1>
+	<h5 style="color:white;font-size:12px;letter-spacing:1px;margin-right:45px">
+  <input type="text" name="검색년" size="5" style="margin-left:15px;margin-right:15px">
+  년
+  <input type="text" name="검색월" size="5" style="margin-left:15px;margin-right:15px">
+  월
+  <input type="submit" value="조회" style="letter-spacing:1px;margin-left:15px;margin-right:30px;padding-left:5px;padding-right:5px">
+</h5>
 </form>
-
 </div>
+</div>
+
 <!-- 달력 -->
 <div class="cal_top">
         <a href="#" id="movePrevMonth"style="color:white"><span id="prevMonth" class="cal_tit" style="color:white">&lt;</span></a>
@@ -216,17 +217,42 @@ table.calendar td{
         jsonData =
         {
             "2019":{
-                "07":{
+                "01":{
+                    "01":"신정"
+                }
+                ,"02":{
+
+                }
+                ,"03":{
+                    "01":"삼일절"
+                }
+                ,"04":{
+                    "05":"식목일"
+                }
+                ,"05":{
+                    "05":"어린이날"
+                }
+                ,"06":{
+                    "06":"현충일"
+                }
+                ,"07":{
                     "17":"제헌절"
                 }
                 ,"08":{
-                    "7":"칠석"
-                    ,"15":"광복절"
-                    ,"23":"처서"
+                    "15":"광복절"
                 }
                 ,"09":{
-                    "13":"추석"
-                    ,"23":"추분"
+
+                }
+                ,"10":{
+                    "03":"개천절"
+                    ,"09":"한글날"
+                }
+                ,"11":{
+
+                }
+                ,"12":{
+                    "25":"성탄절"
                 }
             }
         }
@@ -252,18 +278,20 @@ table.calendar td{
 
 </script>
 
-
+<!-- 출퇴근 시간 입력-->
+<div style="table-layout:fixed" align="center">
 <form>
-  <h1 style="color:white;font-size:15px">
-  <input type="radio" name="check" value="ID" checked>
-  ID
-  <input type="radio" name="check" value="성명">
-  이름
-  <input type="text" name="inputbar" size="12">
-  <input type="submit" value="조회">
-</h1>
+	<h4 style="color:white;font-size:12px;letter-spacing:3px">
+  날짜
+  <input type="text" name="출퇴근날짜" size="10" style="margin-left:20px;margin-right:20px">
+  출근시간
+  <input type="text" name="출근시간" size="8" style="margin-left:20px;margin-right:20px">
+  퇴근시간
+  <input type="text" name="퇴근시간" size="8" style="margin-left:20px;margin-right:20px">
+  <input type="submit" value="입력" style="letter-spacing:1px;margin-left:20px;padding-left:5px;padding-right:5px">
+</h4>
 </form>
-
+</div>
 
 </body>
 
